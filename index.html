@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Noorul's Portfolio</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo" class="logo">
+                <ul id="side-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <span class="material-symbols-outlined" onclick="closemenu()">
+                        close
+                    </span>
+                </ul>
+                <span class="material-symbols-outlined" onclick="openmenu()">
+                    menu_open
+                </span>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Noorul</span> from INDIA</h1>
+                <p>B.Tech Student at <span class="highlight-text">MITS</span></p>
+            </div>
+        </div>
+    </div>
+    <!-- -------------about------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I'm Noorul Hussain Shaik, a Computer Science undergraduate passionate about building impactful software and solving real-world problems. I have a strong foundation in Data Structures & Algorithms, Object-Oriented Programming, and modern web technologies. Having solved 500+ coding problems, I continuously challenge myself to grow as an engineer. I enjoy developing scalable applications, from AI-powered solutions to interactive web platforms. I'm driven by curiosity, clean code, continuous learning and a commitment to delivering high-quality solutions
+
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links " onclick="opentab('experience')">Experience</p> -->
+                        <p class="tab-links " onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C++ | JAVA</span><br>Data Structures/Algorithms</li>
+                            <li><span>Front-End Web Development</span><br>HTML, CSS, JS, React.js</li>
+                            <li><span>Back-End Web Development</span><br>Node.js, Express, Python, MongoDB, SQL
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 March - Current</span><br>Software Engineer at SAMSUNG</li>
+                            <li><span>2022 January - 2022 December</span><br>Junior Software Engineer at EPAM Systems
+                            </li>
+                            <li><span>2021 September - 2022 January</span><br>Teacher Assistant at Coding Ninjas</li>
+                        </ul>
+                    </div> -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - 2027 </span><br>B.Tech in CSE(AIML) at Madanapalle Institute of Technology &
+                                Science</li>
+                            <li><span>2021 - 2023</span><br>Higher Secondary at Narayana Junior College
+                            </li>
+                            <li><span>2020 - 2021</span><br>Secondary at Sree Narayana Swamy High School</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <img src="images/about-me.png" alt="about-me" id="image1">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------services----------------->
+<!--      
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <span class="material-symbols-outlined">
+                        code
+                    </span>
+                    <h2>Software Engineer - <b>SAMSUNG</b></h2>
+                    <p>
+                        Skilled Web Developer with a comprehensive understanding of diverse technologies.
+                        Proven ability to design and implement web-based tools to address specific requirements.
+                        <br><br>
+                        <b>Achievements</b> : Recognized & <span class="highlight-text">Awarded</span> by SAMSUNG for outstanding
+                        performance in <span class="highlight-text">professional-level</span> coding test.
+                    </p>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">
+                        terminal
+                    </span>
+                    <h2>Junior Software Engineer - <b>EPAM Systems</b></h2>
+                    <p>
+                        I embarked on a dynamic journey that spanned a 6-month internship followed by a successful
+                        transition into a full-time role.
+                    </p>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">
+                        cast_for_education
+                    </span>
+                    <h2>Teacher Assistant - <b>Coding Ninjas</b></h2>
+                    <p>
+                        Offered individualized help to students, addressing their coding challenges, answering
+                        questions, and providing additional explanations as needed. <br><br>
+                        <b>Achievements</b> : Solved <span class="highlight-text">500+ queries</span> of students with <span class="highlight-text">4.8/5</span> rating.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- ---------------------portfolio---------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                 <div class="work"> 
+                    <img src="images/puhup-counter1.png" alt="Image">
+                    <div class="layer">
+                        <h3><b>Real-time Pushup counter</b></h3>
+                        <p>
+                            It is a web application,uses your webcam to count the number of pushups you do in real-time. It uses computer vision techniques to detect your body movements and accurately count your pushup repetitions.
+                        </p>
+                        <a href="https://github.com/NoorulShaik/pushupCounter.git"><span class="material-symbols-outlined"> open_in_new</span></a>
+                    </div>
+
+                </div> 
+                <div class="work"> 
+                    <img src="images/todo.png" alt="">
+                    <div class="layer">
+                        <h3><b>To do list</b></h3>
+                        <p>
+                            It is a web application that allows users to create, manage, and organize their tasks and to-do items. Users can add new tasks, mark them as completed, and delete them when they are no longer needed.
+                        </p>
+                        <a href="https://github.com/NoorulShaik/Ramadan-ToDo.git"><span class="material-symbols-outlined"> open_in_new</span></a>
+                    </div>
+                </div>
+                <div class="work"> 
+                    <img src="images/gpa-converter.png" alt="">
+                    <div class="layer">
+                        <h3><b>GPA Converter</b></h3>
+                        <p>
+                            A lightweight, lightning-fast web application built with React and Vite that allows students to instantly convert their GPA/CGPA into a percentage.
+                        </p>
+                        <a href="https://github.com/NoorulShaik/gpa_to_percentage.git"><span class="material-symbols-outlined"> open_in_new</span></a>
+                    </div>
+                </div>
+                <div class="work see-more"> 
+                    <img src="images/todo-list.jpg" alt="">
+                    <div class="layer">
+                        <h3><b>To Do List</b></h3>
+                        <p>
+                            It is an organizational tool that helps individuals manage their tasks and responsibilities
+                        </p>
+                        <a href="https://github.com/sulthanm/todo_lIst"><span class="material-symbols-outlined"> open_in_new</span></a>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="btn" onclick="">See more Soon</button>
+        </div>
+    </div>
+    <!-- ------------------------contact-------------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title-1">Contact Me</h1>
+                    <p>
+                        <span class="material-symbols-outlined">
+                            alternate_email
+                        </span>
+                        shaiknoorul2005@gmail.com
+                    </p>
+                    <p>
+                        <span class="material-symbols-outlined">
+                            smartphone
+                        </span>
+                        +91-8106242548
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://leetcode.com/u/NoorulShaik/"><img src="./images/leetcode.png" alt="leetcode"></a>
+                        <a href="https://www.linkedin.com/in/shaik-noorul-hussain/"><img src="./images/linkedin.png" alt="linked-in"></a>
+                        <a href="https://www.geeksforgeeks.org/profile/noorulshaik"><img src="./images/gfg.jpg" alt="gfg"></a>
+                       <a href="https://github.com/NoorulShaik"><img src="./images/github.png" alt="github"></a>
+                    </div>
+                    <a href="./images/NoorulResumeMS.pdf" download class="btn btn-2">
+                        Download Resume
+                    </a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                    <span id="msg"> 
+                        <p>Hello There...Feel Free to contact </p>
+                        
+                        <span class="material-symbols-outlined">
+                            pan_tool_alt
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Noorul Shaik. <span class="material-symbols-outlined heart">
+                favorite
+                </span>
+            </p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="./contact-form.js"></script>
+
+</body>
+
+</html>
