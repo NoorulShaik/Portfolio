@@ -425,7 +425,7 @@ nav .material-symbols-outlined{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url("./images/N-pro-mobile.png");
+        background-image: url("./images/mobile-pic.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
