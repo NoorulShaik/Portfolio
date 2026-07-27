@@ -14,7 +14,7 @@ function opentab(tabname) {
     document.getElementById(tabname).classList.add("active-tab");
 }
 
-function showMorWork() {
+function showMoreWork() {
     hiddenWork = document.getElementsByClassName('see-more');
     for (work of hiddenWork) {
         work.classList.remove('see-more')
